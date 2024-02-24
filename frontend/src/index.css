@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-darkest: #343a40;
+	--color-dark: #495057;
+	--color-medium: #ced4da;
+	--color-light: #f1f3f5;
+
+	--color-theme: #1098ad;
+	--color-accent: #ffa94d;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 62.5%; */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body,
+html,
+#root {
+	margin: 0;
+	color: var(--color-light);
+	background-color: black;
+	padding: 0;
+	color: white;
+	max-height: 100vh;
+}
+.loaderimg {
+	width: 14rem;
+}
+
+
+body {
+	overflow: scroll;
+    padding: 20px;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.app-header {
+	
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.error {
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding: 2rem;
+	background-color: #495057;
+	border-radius: 100px;
+}
+
+
+
+.start {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.result {
+	background-color: var(--color-theme);
+	color: var(--color-light);
+	border-radius: 100px;
+	text-align: center;
+	padding: 2rem 0;
+	font-size: 2rem;
+	font-weight: 500;
+	margin-bottom: 1.6rem;
+}
+
+.result span {
+	font-size: 2.2rem;
+	margin-right: 4px;
+}
+
+.highscore {
+	font-size: 1.8rem;
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.loader-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 4rem;
+	gap: 1.6rem;
+
+	color: var(--color-medium);
+	font-size: 1.4rem;
+}
+
+/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+	width: 50px;
+	height: 24px;
+	background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+			50%,
+		radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+		radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+	background-size: calc(100% / 3) 12px;
+	background-repeat: no-repeat;
+	animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+	20% {
+		background-position: 0% 0%, 50% 50%, 100% 50%;
+	}
+	40% {
+		background-position: 0% 100%, 50% 0%, 100% 50%;
+	}
+	60% {
+		background-position: 0% 50%, 50% 100%, 100% 0%;
+	}
+	80% {
+		background-position: 0% 50%, 50% 50%, 100% 100%;
+	}
+}
+
+/* ********** */
+/* First counter example */
+.counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 6rem;
+}
+
+.counter * {
+	font-size: inherit;
+	padding: 0.8rem;
+}
+
+
+
+
+
+.gradient{
+	background: hsla(178, 87%, 58%, 1);
+
+	background: linear-gradient(315deg, hsla(178, 87%, 58%, 1) 0%, hsla(290, 81%, 64%, 1) 50%, hsla(288, 100%, 2%, 1) 100%);
+	
+	background: -moz-linear-gradient(315deg, hsla(178, 87%, 58%, 1) 0%, hsla(290, 81%, 64%, 1) 50%, hsla(288, 100%, 2%, 1) 100%);
+	
+	background: -webkit-linear-gradient(315deg, hsla(178, 87%, 58%, 1) 0%, hsla(290, 81%, 64%, 1) 50%, hsla(288, 100%, 2%, 1) 100%);
+	
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#38F1EB", endColorstr="#D55AEE", GradientType=1 );
+}
+
+.myshadow{
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.outlined-btn{
+	@apply border-solid border-2 border-sky-500 py-2 px-3 rounded-lg tracking-wide font-bold cursor-pointer tracking-wide;
+}
+.startstyles{
+	@apply bg-orange-400 p-3 text-2xl  tracking-wider font-extrabold  font-serif rounded-lg
+}
