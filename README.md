@@ -12,7 +12,7 @@ Welcome to the world of the Exploding Kitten Game! This engaging online card gam
 ### Setup Instructions:
 1. **Clone the Repository:**
      ```bash
-    git clone [https://github.com/samriddha-basu-cloud/Exploding-Kitten-Game.git](https://github.com/Nitish-hack/explodingkitten.git)
+    git clone https://github.com/Nitish-hack/explodingkitten.git
     ```
 
 3. **Backend Setup:**
