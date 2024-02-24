@@ -2,7 +2,6 @@
 
 ![image](https://github.com/Nitish-hack/explodingkitten/assets/106099275/3c25ee87-5556-40a0-a145-2b7ae153adc2)
 ![image](https://github.com/Nitish-hack/explodingkitten/assets/106099275/40baedf4-4a53-471e-b8ce-331dd3fa450c)
-![image](https://github.com/Nitish-hack/explodingkitten/assets/106099275/6e935479-3ee9-4380-aec0-4986d1e71e21)
 
 
 Welcome to the world of the Exploding Kitten Game! This engaging online card game is designed for single-player enjoyment. In this game, players draw cards from a deck that features a variety of card types, such as cats, defuse cards, shuffle cards, and exploding kittens. The ultimate goal is to successfully draw all the cards from the deck, carefully avoiding the peril of drawing an exploding kitten.
